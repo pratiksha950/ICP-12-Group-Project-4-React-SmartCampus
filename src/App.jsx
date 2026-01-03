@@ -1,8 +1,11 @@
 import React from 'react'
+import StationaryStore from './views/StationaryStore'
 
 function App() {
   return (
-    <div>App</div>
+    <div>
+      <StationaryStore />
+    </div>
   )
 }
 
