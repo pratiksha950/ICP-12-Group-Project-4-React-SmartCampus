@@ -1,5 +1,6 @@
 import React from "react";
 import { ShoppingCart } from "lucide-react";
+import Button from "./Button.jsx";
 
 function StationaryCard({ image, name, description, price, onAddToCart }) {
   return (
@@ -31,15 +32,10 @@ function StationaryCard({ image, name, description, price, onAddToCart }) {
           ₹{price}
         </p>
 
-       
-        <button
-          onClick={onAddToCart}
-          className="mt-4 flex items-center justify-center gap-2 bg-blue-700 text-white py-2 rounded-lg hover:bg-blue-800 transition"
-        >
-          <ShoppingCart size={18} />
-          Add to Cart
-        </button>
+        <Button button_variant="primary" onClick={onAddToCart} size="small"/>
 
+       
+    
       </div>
     </div>
   );

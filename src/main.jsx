@@ -1,10 +1,25 @@
-import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.jsx'
+import Home from '../src/views/Home.jsx'
+import Login from '../src/views/Login.jsx'
+import Cart from '../src/views/Cart.jsx'
+import Contact from '../src/views/Contact.jsx'
+import StationaryStore from '../src/views/StationaryStore.jsx'
+import {BrowserRouter,Routes,Route} from 'react-router'
 
-createRoot(document.getElementById('root')).render(
+
+const root=createRoot(document.getElementById('root'));
+
+root.render(
   <>
-    <App />
-  </>,
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/stationary-store" element={<StationaryStore />} />
+      </Routes>
+    </BrowserRouter>
+  </>
 )

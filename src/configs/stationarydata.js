@@ -1,5 +1,4 @@
 const stationarydata = [
-  // 🛒 STATIONERY (10)
   {
     id: 1,
     name: "Classmate Notebook",
@@ -81,7 +80,6 @@ const stationarydata = [
     category: "Stationery",
   },
 
-  // 📘 TEXTBOOKS (10)
   {
     id: 101,
     name: "Engineering Mathematics",
