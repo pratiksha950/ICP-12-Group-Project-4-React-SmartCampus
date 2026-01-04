@@ -5,6 +5,8 @@ import Login from '../src/views/Login.jsx'
 import Cart from '../src/views/Cart.jsx'
 import Contact from '../src/views/Contact.jsx'
 import StationaryStore from '../src/views/StationaryStore.jsx'
+import Material from '../src/views/Material.jsx'
+import Upload from '../src/views/Upload.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router'
 
 
@@ -19,6 +21,8 @@ root.render(
         <Route path="/cart" element={<Cart />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<StationaryStore />} />
+        <Route path="/m" element={<Material />} />
+        <Route path="/u" element={<Upload />} />
       </Routes>
     </BrowserRouter>
   </>
