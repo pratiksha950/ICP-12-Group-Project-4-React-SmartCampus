@@ -36,7 +36,7 @@ const stationarydata = [
   {
     id: 3,
     name: "Scientific Calculator",
-    description: "Casio scientific calculator approved for exams",
+    description: "Casio scientific calculator approved for exams Trigonometry",
     price: 999,
     discount: 15,
     image: calculator,
@@ -66,7 +66,7 @@ const stationarydata = [
   },
   {
     id: 5,
-    name: "Blue Ball Pen (Pack of 10)",
+    name: "Blue Ball Pen",
     description: "Smooth writing ball pens for daily use",
     price: 90,
     discount: 0,           
@@ -127,7 +127,7 @@ const stationarydata = [
 
   {
     id: 12,
-    name: "Colored Pencils (Set of 12)",
+    name: "Colored Pencils ",
     description: "Vibrant colored pencils for diagrams and creative work",
     price: 120,
     discount: 5,
@@ -138,7 +138,7 @@ const stationarydata = [
   {
   id: 21,
   name: "Assignment Book",
-  description: "Planner notebook to track assignments, deadlines, and projects",
+  description: "Planner notebook to track assignments",
   price: 120,
   discount: 5,
   image: assignmentBook,

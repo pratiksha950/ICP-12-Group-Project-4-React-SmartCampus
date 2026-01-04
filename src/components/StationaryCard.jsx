@@ -1,13 +1,13 @@
 import React from "react";
 import Button from "./Button.jsx";
-import { CirclePlus,CircleMinus } from 'lucide-react';
+import { Plus,Minus } from 'lucide-react';
 import {useState} from 'react'
 import toast, {Toaster} from 'react-hot-toast';
 
 
 
 
-function StationaryCard({ image, name, description, price, addToCart, id }) {
+function StationaryCard({ image, name, description, price, discount, addToCart, id }) {
     const [quantity,setQuantity]=useState(1);
 
   return (
@@ -34,20 +34,23 @@ function StationaryCard({ image, name, description, price, addToCart, id }) {
           {description}
         </p>
 
-        <div className='flex mt-4 px-4 items-center justify-center text-2xl font-bold '>
+        <div className='flex mt-4 px-4 items-center justify-center text-[20px] font-bold border border-yellow-300 border-[3px] rounded-full mx-auto w-fit h-8 mb-2 '>
 
-          <CircleMinus className='cursor-pointer m-2 ' onClick={() => {
+          <Minus className='cursor-pointer m-2 ' onClick={() => {
              if(quantity > 1) {
                setQuantity(quantity - 1) } else{
                   toast.error("Quantity cannot be less than 1")
                }
                }}/>
 
-            <label>{quantity}</label>
+            <label className="m-3">{quantity}</label>
 
-            <CirclePlus className='cursor-pointer m-2  ' onClick={() => setQuantity(quantity + 1)}/>
+            <Plus className='cursor-pointer m-1  ' onClick={() => setQuantity(quantity + 1)}/>
             
         </div>
+
+          <p className="text-sm font-medium text-green-700 bg-green-100 px-2 py-1 rounded-md justify-center text-center">Discount: {discount}%</p>
+
 
 
         <p className="text-xl font-bold text-blue-700 mt-4 text-center">
