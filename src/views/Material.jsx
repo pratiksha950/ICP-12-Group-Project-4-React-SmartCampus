@@ -1,32 +1,40 @@
 import { useState } from "react";
-import materialdata from "../configs/materialdata.js";
+import materialdata from "../configs/materialdata";
 import MaterialCard from "../components/MaterialCard";
 
 function Material() {
   const [search, setSearch] = useState("");
   const [department, setDepartment] = useState("All");
   const [semester, setSemester] = useState("All");
+  const [year, setYear] = useState("All");
 
   const filteredMaterials = materialdata.filter(item =>
     (department === "All" || item.department === department) &&
     (semester === "All" || item.semester === semester) &&
-    item.title.toLowerCase().includes(search.toLowerCase())
+    (year === "All" || item.year === year) &&
+    (
+      item.title.toLowerCase().includes(search.toLowerCase()) ||
+      item.subject.toLowerCase().includes(search.toLowerCase())
+    )
   );
 
   return (
-    <div className="p-6 max-w-7xl mx-auto">
-      
-      <h1 className="text-3xl font-bold">Study Materials</h1>
+    <div className="p-6  bg-red-100">
+
+      <h1 className="text-3xl font-bold">
+        Previous Year Question Papers
+      </h1>
       <p className="text-gray-500 mt-1">
-        Browse and download study materials from all departments
+        Download university previous year question papers (PYQs)
       </p>
 
-     
+
       <div className="flex flex-wrap gap-4 mt-6">
         <input
           type="text"
-          placeholder="Search materials by title, subject, or uploader..."
+          placeholder="Search by subject or title..."
           className="flex-1 border rounded-lg px-4 py-2"
+          value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
 
@@ -34,7 +42,7 @@ function Material() {
           className="border rounded-lg px-4 py-2"
           onChange={(e) => setDepartment(e.target.value)}
         >
-          <option>All</option>
+          <option value="All">All Departments</option>
           <option>CSE</option>
           <option>ECE</option>
           <option>ME</option>
@@ -44,9 +52,20 @@ function Material() {
 
         <select
           className="border rounded-lg px-4 py-2"
+          onChange={(e) => setYear(e.target.value)}
+        >
+          <option value="All">All Years</option>
+          <option value="2022">2022</option>
+          <option value="2023">2023</option>
+          <option value="2024">2024</option>
+          <option value="2025">2025</option>
+        </select>
+
+        <select
+          className="border rounded-lg px-4 py-2 bg-red-199"
           onChange={(e) => setSemester(e.target.value)}
         >
-          <option>All</option>
+          <option value="All">All Semesters</option>
           <option>Sem 3</option>
           <option>Sem 4</option>
           <option>Sem 5</option>
@@ -54,13 +73,8 @@ function Material() {
         </select>
       </div>
 
-      
-      <p className="text-gray-500 mt-4">
-        Showing {filteredMaterials.length} of {materialdata.length} materials
-      </p>
 
-     
-      <div className="w-96">
+      <div className="flex flex-wrap justify-center gap-4 sm:gap-8 mt-10 w-full">
         {filteredMaterials.map(item => (
           <MaterialCard key={item.id} data={item} />
         ))}
