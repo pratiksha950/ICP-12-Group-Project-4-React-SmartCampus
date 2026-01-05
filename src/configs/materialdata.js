@@ -7,8 +7,9 @@ import cc3 from "../assets/quetionpaper/March_2024-cc.pdf"
 import ts1 from "../assets/quetionpaper/May_Jun_2022-ts.pdf"
 import ts2 from "../assets/quetionpaper/May_Jun_2023-ts.pdf"
 import ts3 from "../assets/quetionpaper/May_Jun_2024-ts.pdf"
-
-
+import ww1 from "../assets/quetionpaper/May_Jun_2022-ww.pdf"
+import ww2 from "../assets/quetionpaper/May_Jun_2023-ww.pdf"
+import ww3 from "../assets/quetionpaper/May_Jun_2024-ww.pdf"
 
 
 const materialdata = [
@@ -301,7 +302,7 @@ const materialdata = [
   // ================= CIVIL =================
   {
     id: 21,
-    title: "Engineering Mechanics Question Paper",
+    title: "Waste Water Engineering Question Paper",
     description: "University Examination",
     type: "PYQ",
     department: "CIVIL",
@@ -311,11 +312,11 @@ const materialdata = [
     examType: "End Sem",
     downloads: 190,
     size: "1.0 MB",
-    fileUrl: "/files/civil-em-sem3-2022.pdf",
+    fileUrl: ww1,
   },
   {
     id: 22,
-    title: "Engineering Mechanics Question Paper",
+    title: "Waste Water Engineering Question Paper",
     description: "University Examination",
     type: "PYQ",
     department: "CIVIL",
@@ -325,8 +326,23 @@ const materialdata = [
     examType: "End Sem",
     downloads: 180,
     size: "1.0 MB",
-    fileUrl: "/files/civil-em-sem4-2022.pdf",
+    fileUrl: ww2,
   },
+    {
+    id: 222,
+    title: "Waste Water Engineering Question Paper",
+    description: "University Examination",
+    type: "PYQ",
+    department: "CIVIL",
+    semester: "Sem 4",
+    subject: "Engineering Mechanics",
+    year: "2022",
+    examType: "End Sem",
+    downloads: 180,
+    size: "1.0 MB",
+    fileUrl: ww3,
+  },
+
 
   // ================= CHEMICAL =================
   {
