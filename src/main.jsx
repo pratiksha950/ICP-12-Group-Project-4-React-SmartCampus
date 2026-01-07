@@ -6,6 +6,7 @@ import Cart from '../src/views/Cart.jsx'
 import Contact from '../src/views/Contact.jsx'
 import StationaryStore from '../src/views/StationaryStore.jsx'
 import Material from '../src/views/Material.jsx'
+import AboutUs from './views/AboutUs.jsx'
 import {BrowserRouter,Routes,Route} from 'react-router'
 
 
@@ -21,6 +22,7 @@ root.render(
         <Route path="/contact" element={<Contact />} />
         <Route path="/store" element={<StationaryStore />} />
         <Route path="/material" element={<Material />} />
+        <Route path="/AboutUs" element={<AboutUs/>}/>
      
       </Routes>
     </BrowserRouter>
