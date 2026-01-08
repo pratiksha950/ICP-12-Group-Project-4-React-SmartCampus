@@ -67,5 +67,17 @@ It provides access to **previous year question papers, a stationery store, atten
 ### ▶️ Run Locally  
 
 1️⃣ **Clone the repository**
-```bash
+
 git clone https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus.git
+
+---
+---
+
+## 👩‍💻 Contributors  
+
+<a href="https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=pratiksha950/ICP-12-Group-Project-4-React-SmartCampus" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
