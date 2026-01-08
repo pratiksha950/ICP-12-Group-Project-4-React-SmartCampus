@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useNavigate, Link } from "react-router-dom";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
-import loginImage from "../assets/login-side.jpg";
+import loginImage from "../assets/login-side1.jpg";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -115,6 +115,7 @@ const Login = () => {
 
           </div>
         </div>
+        
       </div>
 
       <Footer />
