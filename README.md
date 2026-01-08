@@ -62,8 +62,9 @@ It provides access to **previous year question papers, a stationery store, atten
 ## ⚙️ How to Run This Website  
 
 ### ▶️ Run Locally
-1️⃣ **Clone or download the repository**
-https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus
+1️⃣ **Clone or download the repository:**  
+👉 [Smart Campus GitHub Repository](https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus)
+
 
 ---
 ---
