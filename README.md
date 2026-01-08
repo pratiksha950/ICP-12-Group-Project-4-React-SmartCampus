@@ -1,10 +1,7 @@
 # 🚀 Smart Campus – College Management & Student Resource Platform  
 
-## 👉 GitHub Repository  
-🔗 https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus  
-
 ## 👉 Live Website  
-🌐 https://your-smartcampus-link.netlify.app/  
+🌐 [https://your-smartcampus-link.netlify.app/](https://your-smartcampus-link.netlify.app/)  
 
 ---
 
@@ -62,13 +59,11 @@ It provides access to **previous year question papers, a stationery store, atten
 
 ---
 
-## ⚙️ How to Run the Project  
+## ⚙️ How to Run This Website  
 
-### ▶️ Run Locally  
-
-1️⃣ **Clone the repository**
-
-git clone https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus.git
+### ▶️ Run Locally
+1️⃣ **Clone or download the repository**
+https://github.com/pratiksha950/ICP-12-Group-Project-4-React-SmartCampus
 
 ---
 ---
