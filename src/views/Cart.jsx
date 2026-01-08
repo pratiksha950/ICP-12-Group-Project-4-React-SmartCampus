@@ -24,12 +24,10 @@ useEffect(() => {
 
 
   return (
-    <div className='bg-blue-200 min-h-screen flex flex-col'>
+    <div className='bg-[#F8FAFF] font-sans min-h-screen flex flex-col bg-red-300'>
      
-
-
-    <div className='min-h-screen flex flex-col flex-wrap gap-4 justify-center bg-blue-200 p-4 '>
-      <div className='h-145 overflow-y-auto border-2 border-gray-300 rounded-lg p-4 w-full max-w-4xl mx-auto bg-white '>
+    <div className='min-h-screen flex flex-col flex-wrap gap-4 justify-center bg-[#F8FAFF] font-sans-200 p-4 '>
+      <div className='h-145 overflow-y-auto rounded-lg p-4 w-full max-w-4xl mx-auto bg-[#F8FAFF] font-sans '>
       {
         cartItems.map((item)=>{
             console.log(item);
@@ -40,7 +38,7 @@ useEffect(() => {
       }
       </div>
       <div>
-              <h3 className='text-center font-bold text-2xl  bg-blue-300 p-4'>
+              <h3 className='text-center font-bold text-2xl  bg-[#F8FAFF] font-sans p-4'>
         Total Amount: ₹ {totalAmount}     
       </h3>
 
