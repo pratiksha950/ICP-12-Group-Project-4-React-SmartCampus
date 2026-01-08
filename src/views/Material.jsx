@@ -19,9 +19,8 @@ function Material() {
   );
 
   return (
-    <div className="p-6  bg-red-100">
-
-      <h1 className="text-3xl font-bold">
+    <div className="p-6  bg-[#F8FAFF] font-sans">
+      <h1 className="text-black-600 font-extrabold text-4xl md:text-4xl justify-center item-center">
         Previous Year Question Papers
       </h1>
       <p className="text-gray-500 mt-1">
@@ -33,13 +32,13 @@ function Material() {
         <input
           type="text"
           placeholder="Search by subject or title..."
-          className="flex-1 border rounded-lg px-4 py-2"
+          className="flex-1 border rounded-lg px-4 py-2 border-blue-900"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
 
         <select
-          className="border rounded-lg px-4 py-2"
+          className="border rounded-lg px-4 py-2 border-blue-900"
           onChange={(e) => setDepartment(e.target.value)}
         >
           <option value="All">All Departments</option>
@@ -51,7 +50,7 @@ function Material() {
         </select>
 
         <select
-          className="border rounded-lg px-4 py-2"
+          className="border rounded-lg px-4 py-2 border-blue-900"
           onChange={(e) => setYear(e.target.value)}
         >
           <option value="All">All Years</option>
@@ -62,7 +61,7 @@ function Material() {
         </select>
 
         <select
-          className="border rounded-lg px-4 py-2 bg-red-199"
+          className="border rounded-lg px-4 py-2 bg-red-199 border-blue-900"
           onChange={(e) => setSemester(e.target.value)}
         >
           <option value="All">All Semesters</option>

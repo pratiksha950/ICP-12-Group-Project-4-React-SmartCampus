@@ -14,25 +14,26 @@ function CartStationaryItem({
   name,
   description,
   price,
-  discount,
   quantity,
   imageUrl,
 }) {
   return (
     <div
       className="
-        relative                 
-        flex flex-col md:flex-row
-        items-start
-        gap-4
-        rounded-lg
-        shadow-lg
-        p-4
-        mb-4                    
-        bg-green-100
-        w-full
-        max-w-4xl
-      "
+relative
+  flex flex-col md:flex-row
+  items-start
+  gap-4
+  rounded-lg
+  shadow-md
+  p-4
+  mb-4
+  bg-white
+  w-full
+  max-w-4xl
+
+  transition-shadow duration-300
+  hover:shadow-lg      "
     >
 
     
@@ -50,7 +51,7 @@ function CartStationaryItem({
         <img
           src={imageUrl}
           alt={name}
-          className="w-full h-full object-contain bg-gray-400 rounded-xl"
+          className="w-full h-full object-contain  rounded-3xl"
         />
       </div>
 
@@ -59,7 +60,6 @@ function CartStationaryItem({
         <p className="text-md font-semibold">Item Name: {name}</p>
         <p className="text-sm text-gray-700">{description}</p>
         <p>Price: ₹ {price} per Unit</p>
-        <p> discount: {discount}%</p>
         <p> Quantity: {quantity}</p>
         <p className="font-bold">Total: ₹ {price * quantity}</p>
       </div>

@@ -37,21 +37,21 @@ function StationaryStore() {
       <Toaster />
 
      
-      <div className="flex justify-center p-4 bg-gray-100">
+      <div className="flex justify-center p-4 bg-[#F8FAFF] font-sans">
         <input
           type="text"
           placeholder="Search items..."
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full max-w-md p-2 rounded border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500"
+          className="flex w-130 border rounded-lg px-4 py-2 border-blue-900"
         />
       </div>
 
       
-      <div className="flex flex-wrap gap-6 justify-center p-6 bg-gray-100 min-h-screen">
+      <div className="flex flex-wrap gap-6 justify-center p-6 bg-[#F8FAFF] font-sans min-h-screen">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => {
-            const { id, image, name, description, price, discount } = item;
+            const { id, image, name, description, price,originalPrice, discount } = item;
             return (
               <StationaryCard
                 key={id}
@@ -59,6 +59,7 @@ function StationaryStore() {
                 name={name}
                 description={description}
                 price={price}
+                originalPrice={originalPrice}
                 discount={discount}
                 addToCart={addToCart}
                 id={id}
