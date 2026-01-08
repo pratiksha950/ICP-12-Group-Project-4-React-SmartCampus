@@ -95,9 +95,10 @@ function Material() {
       fileUrl={item.fileUrl}
     />
   ))}
-   <Footer />
+   
 </div>
     </div>
+    <Footer />
       </>
    
   );

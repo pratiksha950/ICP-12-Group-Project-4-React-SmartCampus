@@ -2,6 +2,8 @@ import React, { useMemo } from 'react'
 import {useState} from 'react'
 import CartStationaryItem from '../components/CartStationaryItem';
 import Btn from '../components/Button.jsx';
+import Navbar from '../components/Navbar.jsx';
+import Footer from '../components/Footer.jsx'
  
 
 
@@ -11,6 +13,8 @@ function Cart() {
 
 
   return (
+    <>
+    <Navbar />
     <div className='bg-[#F8FAFF] font-sans min-h-screen flex flex-col bg-red-300'>
      
     <div className='min-h-screen flex flex-col flex-wrap gap-4 justify-center bg-[#F8FAFF] font-sans-200 p-4 '>
@@ -41,14 +45,12 @@ function Cart() {
 
       </div>
 
-
-     
-
-
       </div>
 
     </div>
     </div>
+    <Footer />
+    </>
   )
 }
 
