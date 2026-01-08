@@ -55,7 +55,10 @@ It provides access to **previous year question papers, a stationery store, atten
 ---
 
 ## 📂 Project Structure  
-![Smart Campus Project Structure](./images/home-img/readme-img2.png)
+
+
+![Smart Campus Project Structure](src/assets/folderstructure.png)
+
 
 ---
 
